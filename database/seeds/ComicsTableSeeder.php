@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Str;
 use App\Comic;
+use Faker\Generator as Faker;
 
 class ComicsTableSeeder extends Seeder
 {
@@ -10,9 +12,9 @@ class ComicsTableSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(Faker $faker)
     {
-        $comics = config('products-data');
+        $comics = config('product-data');
 
         foreach ($comics as $comic) {
            $new_comic = new Comic();
@@ -25,8 +27,10 @@ class ComicsTableSeeder extends Seeder
             $new_comic->price= $comic['price'];
             $new_comic->sale_date= $comic['sale_date'];
             $new_comic->type= $comic['type'];
-            $new_comic->artists= $comic['artist'];
-            $new_comic->writers= $comic['writers'];
+            $new_comic->artists= $faker->text(20);
+            $new_comic->writers= $faker->text(20);
+
+            $new_comic->save();
         }
     }
 }
