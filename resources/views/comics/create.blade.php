@@ -13,6 +13,7 @@
             <input type="text" name="series" id="series" placeholder="Serie fumetto">
             <input type="text" name="price" id="price" placeholder="Prezzo">
             <input type="date" name="sale_date" id="sale_date" placeholder="Data di uscita">
+            <input type="text" name="type" id="type" placeholder="Tipologia">
             <input type="text" name="artists" id="artists" placeholder="Artists">
             <input type="text" name="writers" id="writers" placeholder="Writers">
             <input type="submit" value="Invia">
