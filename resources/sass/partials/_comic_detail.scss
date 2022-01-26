@@ -1,0 +1,109 @@
+.jumbotron {
+    padding: 9% 0 0 14%;
+    height: 430px;
+    width: 100%;
+    background-image: url("/images/jumbotron.jpg");
+    background-position: top center;
+    border-bottom: 50px solid $primary-color;
+    .cover {
+        position: relative;
+        width: 194px;
+        height: auto;
+        border: 1px solid $white;
+        .text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            background-color: $primary-color;
+            color: $white;
+            text-transform: uppercase;
+            font-size: $font-comics;
+            padding: 5px;
+            text-align: center;
+        }
+        .cta {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: $primary-color;
+            text-transform: uppercase;
+            font-size: $font-comics;
+            padding: 5px;
+            text-align: center;
+            a {
+                text-decoration: none;
+                color: $white;
+            }
+        }
+    }
+}
+.container-comic {
+    padding: 10% 14%;
+    display: flex;
+    justify-content: space-between;
+    .info {
+        width: 65%;
+        .title-comic {
+            text-transform: uppercase;
+            color: $title-comic-detail;
+            font-size: 40px;
+        }
+        .container-info {
+            display: flex;
+            font-size: $font-comics;
+            .info-price-availability {
+                background: $background-price-detail;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                width: 70%;
+                color: $white;
+                border-bottom: 1px solid $second-color;
+                border-right: 1px solid $second-color;
+                .col-sx {
+                    .valuta {
+                        text-transform: capitalize;
+                        color: $valuta;
+                    }
+                }
+                .col-dx {
+                    .availability {
+                        color: $valuta;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .check {
+                color: $white;
+                text-transform: capitalize;
+                background: $background-price-detail;
+                padding: 20px;
+                width: 30%;
+                border-bottom: 1px solid $second-color;
+                text-align: center;
+                .icon-toggle {
+                    font-size: 14px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .description {
+            margin-top: 15px;
+            color: $light-grey;
+            line-height: 28px;
+        }
+    }
+    .banner-adv {
+        position: relative;
+        bottom: 15px;
+        text-transform: uppercase;
+        .text-adv {
+            text-align: right;
+            font-weight: $font-bold;
+            color: $light-grey;
+            font-size: 22px;
+        }
+    }
+}

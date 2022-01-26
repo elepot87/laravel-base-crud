@@ -205,3 +205,110 @@ footer {
 .container-home h1 {
   color: #fff;
 }
+
+.jumbotron {
+  padding: 9% 0 0 14%;
+  height: 430px;
+  width: 100%;
+  background-image: url("/images/jumbotron.jpg");
+  background-position: top center;
+  border-bottom: 50px solid #0282f9;
+}
+.jumbotron .cover {
+  position: relative;
+  width: 194px;
+  height: auto;
+  border: 1px solid #fff;
+}
+.jumbotron .cover .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  background-color: #0282f9;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}
+.jumbotron .cover .cta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0282f9;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}
+.jumbotron .cover .cta a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container-comic {
+  padding: 10% 14%;
+  display: flex;
+  justify-content: space-between;
+}
+.container-comic .info {
+  width: 65%;
+}
+.container-comic .info .title-comic {
+  text-transform: uppercase;
+  color: #5996b2;
+  font-size: 40px;
+}
+.container-comic .info .container-info {
+  display: flex;
+  font-size: 20px;
+}
+.container-comic .info .container-info .info-price-availability {
+  background: #55ba59;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  color: #fff;
+  border-bottom: 1px solid #303030;
+  border-right: 1px solid #303030;
+}
+.container-comic .info .container-info .info-price-availability .col-sx .valuta {
+  text-transform: capitalize;
+  color: #96f08b;
+}
+.container-comic .info .container-info .info-price-availability .col-dx .availability {
+  color: #96f08b;
+  text-transform: uppercase;
+}
+.container-comic .info .container-info .check {
+  color: #fff;
+  text-transform: capitalize;
+  background: #55ba59;
+  padding: 20px;
+  width: 30%;
+  border-bottom: 1px solid #303030;
+  text-align: center;
+}
+.container-comic .info .container-info .check .icon-toggle {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.container-comic .info .description {
+  margin-top: 15px;
+  color: #7a7f81;
+  line-height: 28px;
+}
+.container-comic .banner-adv {
+  position: relative;
+  bottom: 15px;
+  text-transform: uppercase;
+}
+.container-comic .banner-adv .text-adv {
+  text-align: right;
+  font-weight: 700;
+  color: #7a7f81;
+  font-size: 22px;
+}
