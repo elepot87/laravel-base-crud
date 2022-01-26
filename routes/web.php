@@ -13,16 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 
 
 // Comics
-Route::get('/comics', function () {
-    // prodotti
-    $comics = config('product-data');
-    // dump($comics);
-    // pagina
-    return view('comics', compact('comics'));
-})->name('comics');
+Route::get('/comics', 'ComicsController@index')->name('comics');
