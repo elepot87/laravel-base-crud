@@ -14,7 +14,7 @@ class UpdateComicsTable extends Migration
     public function up()
     {
         Schema::table('comics', function (Blueprint $table) {
-            $table->string('price', 10)->change();
+            $table->string('slug');
         });
     }
 
