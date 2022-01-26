@@ -7,7 +7,7 @@
             <nav class="nav-menu">
                 <ul class="main-menu flex no-list-style">
                     <li class="menu-item">
-                        <a href="{{route('comics')}}">
+                        <a href="{{route('comics.index')}}">
                             Comics
                         </a>
                     </li>
