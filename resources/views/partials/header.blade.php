@@ -11,6 +11,11 @@
                             Comics
                         </a>
                     </li>
+                    <li class="menu-item">
+                        <a href="{{route('comics.create')}}">
+                            Nuovo fumetto
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
