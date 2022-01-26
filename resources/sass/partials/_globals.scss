@@ -6,3 +6,14 @@
     box-sizing: border-box;
     font-family: "Yanone Kaffeesatz", sans-serif;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+main {
+    background-color: $third-color;
+}

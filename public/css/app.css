@@ -5,6 +5,17 @@
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+main {
+  background-color: #1c1c1c;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -12,6 +23,10 @@
 
 .flex {
   display: flex;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .flex-center {
@@ -179,4 +194,14 @@ footer {
 }
 .footer-social .container img:hover {
   cursor: pointer;
+}
+
+.container-home {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.container-home h1 {
+  color: #fff;
 }

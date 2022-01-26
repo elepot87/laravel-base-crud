@@ -23,7 +23,7 @@
 <body>
     @include('partials.header')
 
-    <main>
+    <main class="grow">
         @yield('main-content')
     </main>
 
