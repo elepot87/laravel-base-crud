@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-start {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.no-list-style {
+  list-style: none;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.my-15 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.my-100 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mr-50 {
+  margin-right: 50px;
+}
+
+.item-active {
+  border-bottom: 3px solid #0282f9;
+  color: #0282f9 !important;
+  display: inline-block;
+  height: 100%;
+}
+
+.link-logo .img-logo {
+  max-width: 60px;
+}
+
+.main-menu li {
+  margin: 0 10px;
+  height: 100px;
+  line-height: 100px;
+}
+.main-menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  color: #303030;
+}
+.main-menu li a:hover {
+  color: #0282f9;
+}
+
+.products {
+  background: #1c1c1c;
+}
+.products .container {
+  padding: 0;
+  flex-direction: column;
+}
+.products .loader {
+  color: #fff;
+  background-color: #0282f9;
+  border: none;
+  text-transform: uppercase;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+  margin: 40px 0 20px;
+  align-self: center;
+}
+.products .container-comics {
+  flex-wrap: wrap;
+}
+.products .container-comics li {
+  width: calc(16.6666666667% - 30px);
+  margin: 50px 15px 0 15px;
+}
+.products .card {
+  height: 100%;
+  width: 100%;
+}
+.products .card a {
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+}
+.products .card a .container-img {
+  height: 170px;
+  width: 100%;
+  overflow: hidden;
+}
+.products .card a .container-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.products .card a .title-comics {
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+footer {
+  border-top: 8px solid #0282f9;
+}
+
+.footer-social {
+  background-color: #303030;
+}
+.footer-social .footer-cta {
+  color: #fff;
+  background-color: #303030;
+  border: 2px solid #0282f9;
+  padding: 10px 15px;
+  font-size: 26px;
+  line-height: 26px;
+}
+.footer-social .container .follow {
+  color: #0282f9;
+  font-size: 26px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+.footer-social .container img {
+  margin: 0 10px;
+}
+.footer-social .container img:hover {
+  cursor: pointer;
+}

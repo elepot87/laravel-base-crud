@@ -1,0 +1,29 @@
+// Footer
+footer {
+    border-top: 8px solid $primary-color;
+}
+.footer-social {
+    background-color: $second-color;
+    .footer-cta {
+        color: $white;
+        background-color: $second-color;
+        border: 2px solid $primary-color;
+        padding: 10px 15px;
+        font-size: $font-footer;
+        line-height: $font-footer;
+    }
+    .container {
+        .follow {
+            color: $primary-color;
+            font-size: $font-footer;
+            font-weight: $font-bold;
+            margin-right: 15px;
+        }
+        img {
+            margin: 0 10px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

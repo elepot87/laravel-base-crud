@@ -1,0 +1,76 @@
+// Layout
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-start {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.no-list-style {
+    list-style: none;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.py-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.py-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.my-15 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.my-100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
+
+.item-active {
+    border-bottom: 3px solid $primary-color;
+    color: $primary-color !important;
+    display: inline-block;
+    height: 100%;
+}
