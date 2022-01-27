@@ -4,6 +4,11 @@
 
 @section('main-content')
 <div class="products">
+    @if(session('delete'))
+    <div class="alert">
+        <strong>{{session('delete')}}</strong> eliminato con successo.
+    </div>
+    @endif
     <div class="container flex">
         <ul class="container-comics flex no-list-style">
             @foreach ($comics as $comic)

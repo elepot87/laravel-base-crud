@@ -9,7 +9,7 @@
         flex-wrap: wrap;
         li {
             width: calc(100% / 6 - 30px);
-            margin: 50px 15px 0 15px;
+            margin: 65px 15px 0 15px;
         }
     }
     .card {
@@ -72,5 +72,10 @@
             text-decoration: none;
             color: $white;
         }
+    }
+    .alert {
+        background-color: rgba(255, 0, 0, 0.74);
+        color: $white;
+        font-size: 24px;
     }
 }
