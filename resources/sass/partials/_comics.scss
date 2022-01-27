@@ -4,8 +4,7 @@
         padding: 0;
         flex-direction: column;
     }
-    .loader {
-        color: $white;
+    .edit {
         background-color: $primary-color;
         border: none;
         text-transform: uppercase;
@@ -14,8 +13,10 @@
         line-height: 30px;
         text-align: center;
         font-size: 16px;
-        margin: 40px 0 20px;
-        align-self: center;
+        a {
+            text-decoration: none;
+            color: $white;
+        }
     }
     .container-comics {
         flex-wrap: wrap;
