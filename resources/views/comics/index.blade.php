@@ -17,6 +17,9 @@
                             {{ $comic->series }}
                         </div>
                     </a>
+                    <button class="btn">
+                        <a href="{{ route ('comics.edit', $comic->id)}}">Edit</a>
+                    </button>
                 </div>
             </li>
             @endforeach
