@@ -126,6 +126,11 @@ class ComicController extends Controller
      */
     public function destroy($id)
     {
-        //
+        // Prende il record con l'id selezionato
+        $comic = Comic::find($id);
+        // Cancella il record selezionato
+        $comic->delete();
+        // Redirect verso pagina gallery
+    return redirect()->route('comics.index');
     }
 }
