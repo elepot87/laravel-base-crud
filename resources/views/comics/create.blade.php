@@ -19,6 +19,7 @@
             <input type="text" name="writers" id="writers" placeholder="Writers">
             <input type="submit" value="Invia">
         </form>
+        <a href="{{ route('comics.index') }}" class="view-gallery">View Gallery</a>
     </div>
 </div>
 

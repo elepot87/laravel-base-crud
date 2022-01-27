@@ -96,6 +96,17 @@ main {
   height: 100%;
 }
 
+.view-gallery {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.view-gallery:hover {
+  color: #0282f9;
+}
+
 .link-logo .img-logo {
   max-width: 60px;
 }
@@ -127,13 +138,12 @@ main {
   background-color: #0282f9;
   border: none;
   text-transform: uppercase;
+  display: inline-block;
   width: 150px;
   height: 30px;
   line-height: 30px;
   text-align: center;
   font-size: 16px;
-}
-.products .edit a {
   text-decoration: none;
   color: #fff;
 }
@@ -323,6 +333,7 @@ footer {
 form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 35px;
 }
 form input {
   width: 60%;
@@ -340,4 +351,8 @@ form input[type=submit] {
   border: none;
   border-radius: 5px;
   padding: 5px;
+}
+
+.title-comic {
+  color: #0282f9;
 }

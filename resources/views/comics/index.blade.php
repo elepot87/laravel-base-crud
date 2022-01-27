@@ -18,13 +18,12 @@
                         </div>
                     </a>
                 </div>
-                <button class="btn edit">
-                    <a href="{{ route ('comics.edit', $comic->id)}}">Edit</a>
-                </button>
+                <a class="btn edit" href="{{ route ('comics.edit', $comic->id)}}">
+                    Edit
+                </a>
             </li>
             @endforeach
         </ul>
-        <!-- <button class="loader">Load more</button> -->
     </div>
 </div>
 
