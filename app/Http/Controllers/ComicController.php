@@ -40,7 +40,7 @@ class ComicController extends Controller
     public function store(Request $request)
     {
         $data = $request->all();
-        dump($data);
+        // dump($data);
 
         // Inserimento nel DB_DATABASE
         $new_comic = new Comic();
@@ -104,7 +104,18 @@ class ComicController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // colleziono dati che arrivano dal form
+        $data = $request->all();
+
+        // 1.Ottenere il record da aggiornare 
+        $comic = Comic::find($id);
+
+        // 2. Aggiornare le colonne e salvare i dati a db
+        $data['slug'] = Str::slug($data['title'], '-'); // Adattiamo slug nel caso qualcuno modifichi il title
+        $comic->update($data); //save() not require
+
+        // redirect verso pagina dettaglio aggiornato
+        return redirect()->route('comics.show', $comic->slug);
     }
 
     /**

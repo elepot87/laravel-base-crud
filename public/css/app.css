@@ -129,6 +129,7 @@ main {
 
 .products {
   background: #1c1c1c;
+  padding: 20px 0 50px 0;
 }
 .products .container {
   padding: 0;
@@ -225,6 +226,8 @@ footer {
   background-image: url("/images/jumbotron.jpg");
   background-position: top center;
   border-bottom: 50px solid #0282f9;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .jumbotron .cover {
   position: relative;
@@ -351,6 +354,7 @@ form input[type=submit] {
   border: none;
   border-radius: 5px;
   padding: 5px;
+  cursor: pointer;
 }
 
 .title-comic {

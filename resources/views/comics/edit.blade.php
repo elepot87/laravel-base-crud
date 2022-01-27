@@ -7,7 +7,7 @@
 <div class="form">
     <div class="container my-100">
         <h1 class="title-page">Modifica il fumetto:
-            <span class="title-comic">{{ $comic->title }}/span>
+            <span class="title-comic">{{ $comic->title }}</span>
         </h1>
         <form action="{{ route('comics.update', $comic->id) }}" method="POST">
             @csrf
@@ -21,7 +21,7 @@
             <input type="text" name="type" id="type" value="{{$comic->type}}">
             <input type="text" name="artists" id="artists" value="{{$comic->artists}}">
             <input type="text" name="writers" id="writers" value="{{$comic->writers}}">
-            <input type="submit" value="Invia">
+            <input type="submit" value="Update">
         </form>
         <a href="{{ route('comics.index') }}" class="view-gallery">View Gallery</a>
     </div>
