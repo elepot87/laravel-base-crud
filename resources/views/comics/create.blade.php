@@ -5,6 +5,7 @@
 @section('main-content')
 <div class="form">
     <div class="container my-100">
+        <h1 class="title-page">Aggiungi un nuovo fumetto</h1>
         <form action="{{ route('comics.store') }}" method="post">
             @csrf
             <input type="text" name="title" id="title" placeholder="Titolo fumetto">
