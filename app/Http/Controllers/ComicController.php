@@ -54,9 +54,7 @@ class ComicController extends Controller
          $new_comic->save();
 
         //  redirect verso pagina dettaglio
-        return redirect()->route('comics.show', $new_comic->id);
-
-
+        return redirect()->route('comics.show', $new_comic->slug);
     }
 
     /**
@@ -65,11 +63,13 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Comic $comic)
+    public function show($slug)
     {
         // $comic = new Comic();
         // $comic = Comic::find($id);
-        dump($comic);
+        // dump($comic);
+
+        $comic = Comic::where('slug', $slug)->first(); //in caso di doppione, vuol dire che prende il primo che trova
 
         if($comic) {
             return view('comics.show', compact('comic'));
