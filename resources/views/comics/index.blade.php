@@ -18,9 +18,16 @@
                         </div>
                     </a>
                 </div>
-                <a class="btn edit" href="{{ route ('comics.edit', $comic->id)}}">
-                    Edit
-                </a>
+                <div class="container-cta">
+                    <a class="btn edit" href="{{ route ('comics.edit', $comic->id)}}">
+                        Edit
+                    </a>
+                    <form action="{{ route('comics.destroy', $comic->id) }}" method="post" class="form-delete">
+                        <input type="submit" class="btn delete" value='Delete' id="delete">
+                        @csrf
+                        @method('DELETE')
+                    </form>
+                </div>
             </li>
             @endforeach
         </ul>

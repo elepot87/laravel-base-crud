@@ -17,7 +17,7 @@
             <input type="text" name="type" id="type" placeholder="Tipologia">
             <input type="text" name="artists" id="artists" placeholder="Artists">
             <input type="text" name="writers" id="writers" placeholder="Writers">
-            <input type="submit" value="Invia">
+            <input type="submit" value="Invia" id="submit">
         </form>
         <a href="{{ route('comics.index') }}" class="view-gallery">View Gallery</a>
     </div>

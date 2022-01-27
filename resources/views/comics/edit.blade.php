@@ -21,7 +21,7 @@
             <input type="text" name="type" id="type" value="{{$comic->type}}">
             <input type="text" name="artists" id="artists" value="{{$comic->artists}}">
             <input type="text" name="writers" id="writers" value="{{$comic->writers}}">
-            <input type="submit" value="Update">
+            <input type="submit" value="Update" id="submit">
         </form>
         <a href="{{ route('comics.index') }}" class="view-gallery">View Gallery</a>
     </div>
