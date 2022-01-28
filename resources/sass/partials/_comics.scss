@@ -74,8 +74,9 @@
         }
     }
     .alert {
-        background-color: rgba(255, 0, 0, 0.74);
+        background-color: green;
         color: $white;
         font-size: 24px;
+        margin: 20px;
     }
 }
